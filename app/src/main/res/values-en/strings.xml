@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Note</string>
+    <string name="details">Details</string>
+    <string name="heading">Heading</string>
+    <string name="description">Description</string>
+    <string name="add_button">add</string>
+    <string name="save_button">save</string>
+    <string name="delete_button">delete</string>
+    <string name="edit_button">edit</string>
+    <string name="add_fragment_note">Add note</string>
+    <string name="edit_fragment_note">Edit note</string>
+    <string name="delete_question">Are you sure you want to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="orange">orange</string>
+    <string name="blue">blue</string>
+    <string name="green">green</string>
+    <string name="pink">pink</string>
+    <string name="defaultColor">default</string>
+    <string name="add_new_note">Add new note</string>
+    <string name="edit_note">Edit note</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Заметка</string>
+    <string name="details">Детали</string>
+    <string name="heading">Заголовок</string>
+    <string name="description">Описание</string>
+    <string name="add_button">добавить</string>
+    <string name="save_button">сохранить</string>
+    <string name="delete_button">удалить</string>
+    <string name="edit_button">редактировать</string>
+    <string name="add_fragment_note">Добавить заметку</string>
+    <string name="edit_fragment_note">Редактировать заметку</string>
+    <string name="delete_question">Вы уверены, что хотите удалить?</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="orange">ораньжевый</string>
+    <string name="blue">голубой</string>
+    <string name="green">зелёный</string>
+    <string name="pink">розовый</string>
+    <string name="defaultColor">системный</string>
+    <string name="add_new_note">Добавить новую заметку</string>
+    <string name="edit_note">Редактировать заметку</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Привет пустой фрагмент</string>
+</resources>
