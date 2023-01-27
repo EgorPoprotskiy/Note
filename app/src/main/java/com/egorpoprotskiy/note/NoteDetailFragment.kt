@@ -1,10 +1,9 @@
 package com.egorpoprotskiy.note
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -15,11 +14,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.egorpoprotskiy.note.model.Note
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [NoteDetailFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class NoteDetailFragment : Fragment() {
     //9.1 Объявление переменной navArgs(). Аргументы должны присутствовать в nav_graph этих фрагментов
     private val navigationArgs: NoteDetailFragmentArgs by navArgs()
@@ -42,6 +37,7 @@ class NoteDetailFragment : Fragment() {
             deleteButton.setOnClickListener { showConfirmationDialog() }
             //24.3 Добавить слушатель нажатий на кнопку редактирования товара
             editButton.setOnClickListener { editNote() }
+            shareButton.setOnClickListener { sendNote() }
         }
     }
 
@@ -97,6 +93,14 @@ class NoteDetailFragment : Fragment() {
         //24.2 Переход на экран редактирования и изменения заголовка экрана.
         val action = NoteDetailFragmentDirections.actionNoteDetailFragmentToNoteAddFragment(getString(R.string.edit_fragment_note), note.id)
         this.findNavController().navigate(action)
+    }
+    //Добавления функции отпраки заметки другому человек
+    fun sendNote() {
+        val noteAll = getString(R.string.note_details, binding.noteHeading.text, binding.noteDescription.text)
+        val intent = Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name)).putExtra(Intent.EXTRA_TEXT, noteAll)
+        if (activity?.packageManager?.resolveActivity(intent, 0) != null) {
+            startActivity(intent)
+        }
     }
 
     //9.8 Вызывается, когда фрагмент уничтожен

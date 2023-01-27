@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Note</string>
     <string name="details">Details</string>
-    <string name="heading">Heading</string>
+    <string name="heading">Theme</string>
     <string name="description">Description</string>
     <string name="add_button">add</string>
     <string name="save_button">save</string>
@@ -20,5 +20,7 @@
     <string name="defaultColor">default</string>
     <string name="add_new_note">Add new note</string>
     <string name="edit_note">Edit note</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="note_details">Theme: %1$s; Description: %2$s</string>
+    <string name="hello_blank_fragment">Description: %2$s</string>
+    <string name="share_note">Share note</string>
 </resources>
