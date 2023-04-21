@@ -48,46 +48,41 @@
         app:layout_constraintBottom_toTopOf="@+id/save_button"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <RadioButton
             android:id="@+id/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/defaultColor"
-            android:textColor="@color/grey"
-            android:textSize="14sp" />
+            android:drawableLeft="@drawable/white"/>
 
         <RadioButton
             android:id="@+id/orange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/orange"
-            android:textColor="@color/orange" />
+            android:drawableLeft="@drawable/orange"/>
 
         <RadioButton
             android:id="@+id/blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/blue"
-            android:textColor="@color/blue" />
+            android:drawableLeft="@drawable/blue"/>
 
         <RadioButton
             android:id="@+id/green"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/green"
-            android:textColor="@color/green" />
+            android:drawableLeft="@drawable/green"/>
 
         <RadioButton
             android:id="@+id/pink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/pink"
-            android:textColor="@color/pink" />
+            android:drawableLeft="@drawable/pink" />
 
     </RadioGroup>
 

@@ -80,10 +80,10 @@ class NoteAddFragment : Fragment() {
                 binding.noteHeading.text.toString(),
                 binding.noteDescription.text.toString(),
                 when (binding.noteColor.checkedRadioButtonId) {
-                    R.id.orange -> resources.getColor(R.color.orangeT).toString()
-                    R.id.blue -> resources.getColor(R.color.blueT).toString()
-                    R.id.green -> resources.getColor(R.color.greenT).toString()
-                    R.id.pink -> resources.getColor(R.color.pinkT).toString()
+                    R.id.orange -> resources.getColor(R.color.orange).toString()
+                    R.id.blue -> resources.getColor(R.color.blue).toString()
+                    R.id.green -> resources.getColor(R.color.green).toString()
+                    R.id.pink -> resources.getColor(R.color.pink).toString()
                     else -> resources.getColor(R.color.defaultColor).toString()
                 }
             )
@@ -119,10 +119,10 @@ class NoteAddFragment : Fragment() {
             noteHeading.setText(note.heading, TextView.BufferType.SPANNABLE)
             noteDescription.setText(note.description, TextView.BufferType.SPANNABLE)
             when (noteColor.checkedRadioButtonId) {
-                R.id.orange -> resources.getColor(R.color.orangeT).toString()
-                R.id.blue -> resources.getColor(R.color.blueT).toString()
-                R.id.green -> resources.getColor(R.color.greenT).toString()
-                R.id.pink -> resources.getColor(R.color.pinkT).toString()
+                R.id.orange -> resources.getColor(R.color.orange).toString()
+                R.id.blue -> resources.getColor(R.color.blue).toString()
+                R.id.green -> resources.getColor(R.color.green).toString()
+                R.id.pink -> resources.getColor(R.color.pink).toString()
                 else -> resources.getColor(R.color.defaultColor).toString()
             }
             //27.2 Слушатель нажатий на кнопку сохранить, но уже изменённые данные
@@ -138,10 +138,10 @@ class NoteAddFragment : Fragment() {
                 this.binding.noteHeading.text.toString(),
                 this.binding.noteDescription.text.toString(),
                 when (binding.noteColor.checkedRadioButtonId) {
-                    R.id.orange -> resources.getColor(R.color.orangeT).toString()
-                    R.id.blue -> resources.getColor(R.color.blueT).toString()
-                    R.id.green -> resources.getColor(R.color.greenT).toString()
-                    R.id.pink -> resources.getColor(R.color.pinkT).toString()
+                    R.id.orange -> resources.getColor(R.color.orange).toString()
+                    R.id.blue -> resources.getColor(R.color.blue).toString()
+                    R.id.green -> resources.getColor(R.color.green).toString()
+                    R.id.pink -> resources.getColor(R.color.pink).toString()
                     else -> resources.getColor(R.color.defaultColor).toString()
                 }
             )
