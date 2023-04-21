@@ -6,4 +6,11 @@
     <dimen name="marginTop">8dp</dimen>
     <dimen name="marginStart">8dp</dimen>
     <dimen name="marginEnd">8dp</dimen>
+    <dimen name="top">4dp</dimen>
+    <dimen name="start">8dp</dimen>
+    <dimen name="end">8dp</dimen>
+    <dimen name="bottom">4dp</dimen>
+    <dimen name="radius">8dp</dimen>
+    <dimen name="elevation">4dp</dimen>
+
 </resources>
