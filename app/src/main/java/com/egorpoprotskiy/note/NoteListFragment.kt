@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.egorpoprotskiy.note.ViewModel.NoteViewModel
 import com.egorpoprotskiy.note.ViewModel.NoteViewModelFactory
 import com.egorpoprotskiy.note.adapter.NoteListAdapter
@@ -55,7 +56,8 @@ class NoteListFragment : Fragment() {
 
         // 7.3 RecyclerView по-умолчанию будет списком
 //        binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
-        binding.recyclerView.layoutManager = GridLayoutManager(this.context, 2)
+//        binding.recyclerView.layoutManager = GridLayoutManager(this.context, 2)
+
 
         // 7.4 Переход на на другой фрагмент
         binding.addNote.setOnClickListener {
