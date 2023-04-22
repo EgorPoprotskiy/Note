@@ -34,7 +34,7 @@ class NoteDetailFragment : Fragment() {
             noteDescription.text = note.description
             noteColor.setBackgroundColor(note.color.toInt())
             //23.2 Добавить слушатель нажатий на кнопку удаления товара.(на Этом пункте заканчивается Удаление объетов из БД)
-            deleteButton.setOnClickListener { showConfirmationDialog() }
+//            deleteButton.setOnClickListener { showConfirmationDialog() }
             //24.3 Добавить слушатель нажатий на кнопку редактирования товара
             editButton.setOnClickListener { editNote() }
             shareButton.setOnClickListener { sendNote() }
@@ -68,25 +68,25 @@ class NoteDetailFragment : Fragment() {
     }
 
     //9.4 Отображает диалоговое окно предупреждения для получения подтверждения пользователя перед удалением элемента.(Данная функция пригодится позже)
-    private fun showConfirmationDialog() {
-        MaterialAlertDialogBuilder(requireContext())
-            .setTitle(getString(android.R.string.dialog_alert_title))
-            .setMessage(getString(R.string.delete_question))
-            .setCancelable(false)
-            .setNegativeButton(getString(R.string.no)) {_, _ -> }
-            .setPositiveButton(getString(R.string.yes)) {_, _ ->
-                //9.5 Вызов функции по удалению элемента
-                deleteNote()
-            }
-            .show()
-    }
-    //9.6 Функция удаления элемента
-    private fun deleteNote() {
-        //23.1 Удаляет текущий элемент
-        viewModel.deleteNote(note)
-        //9.7 переход к фрагменту списка
-        findNavController().navigateUp()
-    }
+//    private fun showConfirmationDialog() {
+//        MaterialAlertDialogBuilder(requireContext())
+//            .setTitle(getString(android.R.string.dialog_alert_title))
+//            .setMessage(getString(R.string.delete_question))
+//            .setCancelable(false)
+//            .setNegativeButton(getString(R.string.no)) {_, _ -> }
+//            .setPositiveButton(getString(R.string.yes)) {_, _ ->
+//                //9.5 Вызов функции по удалению элемента
+//                deleteNote()
+//            }
+//            .show()
+//    }
+//    //9.6 Функция удаления элемента
+//    private fun deleteNote() {
+//        //23.1 Удаляет текущий элемент
+//        viewModel.deleteNote(note)
+//        //9.7 переход к фрагменту списка
+//        findNavController().navigateUp()
+//    }
 
     //24.1 РЕДАКТИРОВАНИЕ ЭЛЕМЕНТОВ - НАЧАЛО
     private fun editNote() {
