@@ -36,7 +36,7 @@ class NoteDetailFragment : Fragment() {
             //23.2 Добавить слушатель нажатий на кнопку удаления товара.(на Этом пункте заканчивается Удаление объетов из БД)
 //            deleteButton.setOnClickListener { showConfirmationDialog() }
             //24.3 Добавить слушатель нажатий на кнопку редактирования товара
-            editButton.setOnClickListener { editNote() }
+//            editButton.setOnClickListener { editNote() }
             shareButton.setOnClickListener { sendNote() }
         }
     }
