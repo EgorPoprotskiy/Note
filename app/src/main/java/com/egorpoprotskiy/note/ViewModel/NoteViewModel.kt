@@ -42,7 +42,7 @@ class NoteViewModel(private val noteDao: NoteDao): ViewModel() {
     // ..На этом шаге вы добавите функцию для проверки того, не является ли текст в TextFields пустым..
     // ..Вы будете использовать эту функцию для проверки ввода пользователя перед добавлением или обновлением сущности в базе данных. Эта проверка должна быть выполнена в ViewModel а не во Фрагменте.
     fun isEntryValid(noteHeading: String, noteDescription: String, noteColor: String): Boolean{
-        if (noteHeading.isBlank() || noteDescription.isBlank()) {
+        if (noteHeading.isBlank() && noteDescription.isBlank()) {
             return false
         }
         return true
