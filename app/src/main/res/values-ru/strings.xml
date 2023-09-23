@@ -10,6 +10,7 @@
     <string name="add_fragment_note">Добавить заметку</string>
     <string name="edit_fragment_note">Редактировать заметку</string>
     <string name="delete_question">Вы уверены, что хотите удалить?</string>
+    <string name="cancel">Отмена</string>
     <string name="no">Нет</string>
     <string name="yes">Да</string>
     <string name="orange">ораньжевый</string>

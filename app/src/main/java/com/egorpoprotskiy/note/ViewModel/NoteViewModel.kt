@@ -5,7 +5,7 @@ import com.egorpoprotskiy.note.data.NoteDao
 import com.egorpoprotskiy.note.model.Note
 import kotlinx.coroutines.launch
 
-// 14.1 Создаём модель представления заметочниа(создать файл/класс InveтtoryViewModel.kt)
+// 14.1 Создаём модель представления заметочника(создать файл/класс InveтtoryViewModel.kt)
 class NoteViewModel(private val noteDao: NoteDao): ViewModel() {
 
     //18.1 Отображение сведений об элементе на экране с помощью адаптера, созданного в NoteListAdapter. getItems() - из NoteDao.kt
@@ -13,7 +13,7 @@ class NoteViewModel(private val noteDao: NoteDao): ViewModel() {
     // Далее в NoteListFragment
 
     // 14.5 добавь private функция называется insertNote() который принимает note объект и добавляет данные в базу данных неблокирующим образом.
-    private fun insertNote(note: Note) {
+    fun insertNote(note: Note) {
         // 14.6 Чтобы взаимодействовать с базой данных вне основного потока, запустите сопрограмму и вызовите в ней метод DAO.
         viewModelScope.launch {
             noteDao.insert(note)
@@ -42,7 +42,7 @@ class NoteViewModel(private val noteDao: NoteDao): ViewModel() {
     // ..На этом шаге вы добавите функцию для проверки того, не является ли текст в TextFields пустым..
     // ..Вы будете использовать эту функцию для проверки ввода пользователя перед добавлением или обновлением сущности в базе данных. Эта проверка должна быть выполнена в ViewModel а не во Фрагменте.
     fun isEntryValid(noteHeading: String, noteDescription: String, noteColor: String): Boolean{
-        if (noteHeading.isBlank() && noteDescription.isBlank()) {
+        if (noteHeading.isBlank() && noteDescription.isBlank()  ) {
             return false
         }
         return true

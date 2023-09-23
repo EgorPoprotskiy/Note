@@ -11,6 +11,7 @@
     <string name="add_fragment_note">Add note</string>
     <string name="edit_fragment_note">Edit note</string>
     <string name="delete_question">Are you sure you want to delete?</string>
+    <string name="cancel">Cancel</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
     <string name="orange">orange</string>
