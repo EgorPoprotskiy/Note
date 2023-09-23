@@ -19,14 +19,14 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/heading" />
 
-        <View
-            android:id="@+id/divider"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_margin="@dimen/marginAll2"
-            android:background="?attr/dividerHorizontal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/noteHeading" />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/marginAll2"
+        android:background="?attr/dividerHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noteHeading" />
 
     <TextView
         android:id="@+id/noteDescription"

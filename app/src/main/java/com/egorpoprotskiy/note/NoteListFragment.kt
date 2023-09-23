@@ -21,6 +21,7 @@ import com.egorpoprotskiy.note.adapter.NoteListAdapter
 import com.egorpoprotskiy.note.databinding.FragmentNoteListBinding
 import com.egorpoprotskiy.note.model.Note
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 import kotlin.math.roundToInt
 
 
@@ -40,7 +41,7 @@ class NoteListFragment : Fragment() {
     //7.1 Объявление binding
     private var _binding: FragmentNoteListBinding? = null
     private val binding get() = _binding!!
-
+    //19.0
     private lateinit var noteAdapter: NoteListAdapter
     lateinit var note: Note
 
@@ -109,6 +110,10 @@ class NoteListFragment : Fragment() {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val item = noteAdapter.currentList[viewHolder.adapterPosition]
                 viewModel.deleteNote(item)
+                // Отображает всплывающее окно предупреждения для получения подтверждения пользователя перед удалением элемента.
+                Snackbar.make(binding.recyclerView, R.string.delete_question, Snackbar.LENGTH_LONG).setAction(R.string.cancel, View.OnClickListener {
+                    viewModel.insertNote(item)
+                }).show()
             }
 
 //            val trashIcon = resources.getDrawable(R.drawable.baseline_delete_outline_big, null)

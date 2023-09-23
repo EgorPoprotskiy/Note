@@ -94,7 +94,7 @@ class NoteDetailFragment : Fragment() {
         val action = NoteDetailFragmentDirections.actionNoteDetailFragmentToNoteAddFragment(getString(R.string.edit_fragment_note), note.id)
         this.findNavController().navigate(action)
     }
-    //Добавления функции отпраки заметки другому человек
+    //Добавления функции отправки заметки другому человек
     fun sendNote() {
         val noteAll = getString(R.string.note_details, binding.noteHeading.text, binding.noteDescription.text)
         val intent = Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name)).putExtra(Intent.EXTRA_TEXT, noteAll)

@@ -54,7 +54,7 @@ dependencies {
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     //для фрагментов
     implementation "androidx.fragment:fragment-ktx:1.5.5"
     // Room libraries
